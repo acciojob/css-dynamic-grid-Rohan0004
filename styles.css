@@ -1,9 +1,8 @@
 /*  your css code here. If applicable */
 .grid-container{
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+	display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 10px 10px;
 }
 .grid-item{
 	background-color:lightgray;
@@ -11,4 +10,7 @@
 	width:200px;
 	border-radius: 5px;
 	font-size:40px;	
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
